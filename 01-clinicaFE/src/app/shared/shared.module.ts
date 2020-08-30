@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
@@ -11,7 +13,8 @@ import { SidebarComponent } from '../shared/sidebar/sidebar.component';
     SidebarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     BreadcrumbsComponent,
